@@ -1,0 +1,74 @@
+\begin{frame}
+    \frametitle{Outline} 
+    \tableofcontents[currentsection]
+\end{frame} 
+
+\begin{frame}
+    \frametitle{Main Research Question} 
+
+    \vspace{-0.7cm}
+    \begin{center}
+        \LARGE{How does VOC speciation affect\\\vspace{3mm} O3 concentrations in models?}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Motivation}
+    \begin{columns}[onlytextwidth]
+        \begin{column}{0.45\textwidth}
+            \begin{flushleft}
+                \vspace{-1.5cm}
+                \includegraphics[width=1.10\textwidth]{../Plotting_scripts/Sector_conributions} 
+            \end{flushleft}
+        \end{column}%
+        \begin{column}{0.45\textwidth}
+            \begin{flushright}
+                \vspace{-1.5cm}
+                \includegraphics[width=1.10\textwidth]{../Plotting_scripts/Speciations} 
+            \end{flushright}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Compared Solvent Speciations}
+
+    \vspace{-0.4cm}
+    {
+        \setstretch{1.15}
+        \begin{table}%[!ht]
+            \begin{center}
+                \small\makebox[\textwidth][c]{%
+                \begin{tabular}{lllP{5.2cm}}
+                    \toprule
+                    \textbf{Speciation} & \textbf{Reference} \\ \bottomrule
+                    TNO & [Stockwell et al., JGR, 1997] \\ \hline
+                    IPCC & [Stockwell et al., JGR, 1990] \\ \hline
+                    EMEP & [Saunders et al., ACP, 2003] \\ \hline
+                    DE94 & [\url{http://mcm.leeds.ac.uk/MCM/}] \\ \hline
+                    GR95 & [Emmons et al., GMD, 2010] \\ \hline
+                    GR05 & [Jenkin et al., AE, 2008]\\ \hline
+                    UK98 & [Yarwood et al., EPA report, 2005] \\ \hline
+                    UK08 & [Goliff et al., AE, 2013] \\ \bottomrule
+                \end{tabular}}
+            \end{center}
+        \end{table}
+    }
+\end{frame}
+
+\begin{frame}
+    \frametitle{Boxmodel Setup}
+
+    \begin{itemize}
+        \item MECCA boxmodel, equinoctical conditions over 7 days. \vspace{5mm}
+        \item Idealised urban area of 1000 km$^2$. \vspace{5mm}
+        \item Total NMVOC emissions of 1000 ton/day \newline [Warnecke et al., JGR, 2007]. \vspace{5mm}
+        \item NMVOC emissions constant until noon of day 1.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Model Scenarios}
+    \vspace{-0.5cm}
+    \input{tex_files/modelling}
+\end{frame}

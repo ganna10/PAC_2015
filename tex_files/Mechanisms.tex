@@ -1,0 +1,115 @@
+\begin{frame}
+    \frametitle{Outline} 
+    \tableofcontents[currentsection]
+\end{frame} 
+
+\begin{frame}
+    \frametitle{Main Research Question} 
+
+    \vspace{-0.6cm}
+    \begin{center}
+        \Large{How is \ce{O_x} production affected by the \\differing simplification techniques used in \\different chemical mechanisms?}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Chemical Mechanisms}
+
+    \vspace{-0.4cm}
+    {
+        \setstretch{1.17}
+        \begin{table}%[!ht]
+            \begin{center}
+                \small\makebox[\textwidth][c]{%
+                \begin{tabular}{llP{5.2cm}}
+                    \toprule
+                    \textbf{Chemical} & \multirow{2}{*}{\textbf{Lumping Approach}}  & \multirow{2}{*}{\textbf{Reference}} \\ \textbf{Mechanism} & & \\ \toprule
+                    MCM v3.2 & No lumping & [\url{http://mcm.leeds.ac.uk/MCM/}] \\ \hline
+                    \multirow{2}{*}{MCM v3.1} & \multirow{2}{*}{No lumping} & [Saunders et al., ACP, 2003] \\ & & [Jenkin et al., ACP, 2003] \\ \hline
+                    CRI v2 & Lumped intermediates & [Jenkin et al., AE, 2008]\\ \hline
+                    MOZART-4 & Lumped molecule & [Emmons et al., GMD, 2010] \\ \hline
+                    RADM2 & Lumped molecule & [Stockwell et al., JGR, 1990] \\ \hline
+                    RACM & Lumped molecule & [Stockwell et al., JGR, 1997] \\ \hline
+                    RACM2 & Lumped molecule & [Goliff et al., AE, 2013] \\ \hline
+                    CBM-IV & Lumped structure & [Gery et al., JGR, 1989] \\ \hline
+                    CB05 & Lumped structure & [Yarwood et al., EPA report, 2005] \\ \bottomrule
+            \end{tabular}}
+            \end{center}
+        \end{table}
+    }
+\end{frame}
+
+\begin{frame}
+    \frametitle{Boxmodel Setup}
+
+    \vspace{-0.5cm}
+    \begin{itemize}
+        \item MECCA boxmodel over Los Angeles,\\ under equinoctical conditions over 7 days. \vspace{3mm}
+        \item Initial NMVOC typical of urban environments. \vspace{3mm}
+        \item Same NMVOC emissions and reactive carbon \\in each model run. \vspace{3mm}
+        \item NO source tuned for maximum \ce{O3} production. \vspace{3mm}
+        \item Mechanisms tagged for each NMVOC.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Organic Degradation Product Tagging}
+    \vspace{-1.0cm}
+    \begin{center}
+        \input{tex_files/tagging_diagram}
+    \end{center}
+\end{frame}
+
+{
+    \usebackgroundtemplate{%
+        \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[height=0.95\paperheight, width = 0.95\paperwidth]{../Plotting_scripts/MCMv3_2_tagged_non_tagged_Ox_budget}\hfil}\vfil}
+    }
+    \begin{frame}[plain]
+    \end{frame}
+}
+
+\begin{frame}
+    \frametitle{TOPP Calculation}
+
+    \begin{itemize}
+        \item Attribute daily \ce{O_x} production to each NMVOC. \vspace{5mm}
+        \item Sum daily \ce{O_x} production from each NMVOC. \vspace{5mm}
+        \item Normalise by total emissions of the NMVOC on day 1. \vspace{5mm}
+    \end{itemize}
+\end{frame}
+
+{
+    \usebackgroundtemplate{%
+        \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[height=0.95\paperheight, width = 0.95\paperwidth]{../Plotting_scripts/TOPP_daily_time_series_pentane_toluene}\hfil}\vfil}
+    }
+    \begin{frame}[plain]
+    \end{frame}
+}
+
+{
+    \usebackgroundtemplate{%
+        \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[height=0.95\paperheight, width = 0.95\paperwidth]{../Plotting_scripts/pentane_Ox_production_by_C_number}\hfil}\vfil}
+    }
+    \begin{frame}[plain]
+    \end{frame}
+}
+
+{
+    \usebackgroundtemplate{%
+        \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[height=0.95\paperheight, width = 0.95\paperwidth]{../Plotting_scripts/toluene_Ox_production_by_C_number}\hfil}\vfil}
+    }
+    \begin{frame}[plain]
+    \end{frame}
+}
+
+{
+    \usebackgroundtemplate{%
+        \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[height=0.95\paperheight, width = 0.95\paperwidth]{../Plotting_scripts/net_reactive_carbon_loss_pentane_toluene}\hfil}\vfil}
+    }
+    \begin{frame}[plain]
+    \end{frame}
+}
+
+\begin{frame}
+    \frametitle{Paper Status}
+\end{frame}
