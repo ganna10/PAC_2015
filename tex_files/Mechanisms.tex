@@ -8,7 +8,7 @@
 
     \vspace{-0.6cm}
     \begin{center}
-        \Large{How is \ce{O_x} production affected by the \\differing simplification techniques used in \\different chemical mechanisms?}
+        \Large{How do the simplification techniques \\used in different chemical mechanisms \\affect \ce{O_x} production?}
     \end{center}
 \end{frame}
 
@@ -44,8 +44,8 @@
 
     \vspace{-0.5cm}
     \begin{itemize}
-        \item MECCA boxmodel over Los Angeles,\\ under equinoctical conditions over 7 days. \vspace{3mm}
-        \item Initial NMVOC typical of urban environments. \vspace{3mm}
+        \item MECCA boxmodel over 7 days. \vspace{3mm}
+        \item Initial NMVOC typical of Los Angeles. \vspace{3mm}
         \item Same NMVOC emissions and reactive carbon \\in each model run. \vspace{3mm}
         \item NO source tuned for maximum \ce{O3} production. \vspace{3mm}
         \item Mechanisms tagged for each NMVOC.
@@ -80,6 +80,14 @@
 
 {
     \usebackgroundtemplate{%
+        \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[height=0.95\paperheight, width = 0.95\paperwidth]{../Plotting_scripts/O3_mixing_ratios_mech_comp}\hfil}\vfil}
+    }
+    \begin{frame}[plain]
+    \end{frame}
+}
+
+{
+    \usebackgroundtemplate{%
         \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[height=0.95\paperheight, width = 0.95\paperwidth]{../Plotting_scripts/TOPP_daily_time_series_pentane_toluene}\hfil}\vfil}
     }
     \begin{frame}[plain]
@@ -110,6 +118,36 @@
     \end{frame}
 }
 
+{
+    \usebackgroundtemplate{%
+        \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[height=0.95\paperheight, width = 0.95\paperwidth]{../Plotting_scripts/HC5P_NO_C_numbers}\hfil}\vfil}
+    }
+    \begin{frame}[plain]
+    \end{frame}
+}
+
+\begin{frame}
+    \frametitle{Conclusions}
+    \begin{columns}[onlytextwidth]
+        \begin{column}{0.5\textwidth}
+            \vspace{-4mm}
+            \hspace{-9.8mm}
+            \includegraphics[width=1.13\textwidth]{../Plotting_scripts/O3_mixing_ratios_mech_comp}
+        \end{column}%
+        \begin{column}{0.5\textwidth} 
+            \vspace{-4mm}
+            \begin{itemize}
+                \item Reduced mechanisms break down many VOC faster than MCM. \vspace{4mm}
+                \item Many VOC produce similar \ce{Ox} to MCM on first day, but not subsequent days. 
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
 \begin{frame}
     \frametitle{Paper Status}
+    \begin{itemize}
+        \item Advanced draft of paper sent for internal review. \vspace{1cm}
+        \item Discuss draft as part of this meeting.
+    \end{itemize}
 \end{frame}

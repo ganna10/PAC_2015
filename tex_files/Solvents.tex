@@ -8,7 +8,7 @@
 
     \vspace{-0.7cm}
     \begin{center}
-        \LARGE{How does VOC speciation affect\\\vspace{3mm} O3 concentrations in models?}
+        \LARGE{How does VOC speciation affect\\\vspace{3mm} \ce{O3} concentrations in models?}
     \end{center}
 \end{frame}
 
@@ -24,7 +24,7 @@
         \begin{column}{0.45\textwidth}
             \begin{flushright}
                 \vspace{-1.5cm}
-                \includegraphics[width=1.10\textwidth]{../Plotting_scripts/Speciations} 
+                \includegraphics[width=1.10\textwidth]{../Plotting_scripts/Speciations_for_MCM} 
             \end{flushright}
         \end{column}
     \end{columns}
@@ -42,14 +42,14 @@
                 \begin{tabular}{lllP{5.2cm}}
                     \toprule
                     \textbf{Speciation} & \textbf{Reference} \\ \bottomrule
-                    TNO & [Stockwell et al., JGR, 1997] \\ \hline
-                    IPCC & [Stockwell et al., JGR, 1990] \\ \hline
-                    EMEP & [Saunders et al., ACP, 2003] \\ \hline
-                    DE94 & [\url{http://mcm.leeds.ac.uk/MCM/}] \\ \hline
-                    GR95 & [Emmons et al., GMD, 2010] \\ \hline
-                    GR05 & [Jenkin et al., AE, 2008]\\ \hline
-                    UK98 & [Yarwood et al., EPA report, 2005] \\ \hline
-                    UK08 & [Goliff et al., AE, 2013] \\ \bottomrule
+                    TNO & [Builtjes et al., TNO Report, 2002] \\ \hline
+                    IPCC & [Ehhalt et al., IPCC Report, 2001] \\ \hline
+                    EMEP & [Simpson et al., ACP, 2010] \\ \hline
+                    DE94 & [Friedrich et. al., JAC, 2002] \\ \hline
+                    GR95 & [Sidiropoulos and Tsilingiridis, FEB, 2007] \\ \hline
+                    GR05 & [Sidiropoulos and Tsilingiridis, FEB, 2007] \\ \hline
+                    UK98 & [Goodwin, UK NAEI report, 2000] \\ \hline
+                    UK08 & [Murrells et al., UK NAEI Report, 2010] \\ \bottomrule
                 \end{tabular}}
             \end{center}
         \end{table}
@@ -60,7 +60,7 @@
     \frametitle{Boxmodel Setup}
 
     \begin{itemize}
-        \item MECCA boxmodel, equinoctical conditions over 7 days. \vspace{5mm}
+        \item MECCA boxmodel over 7 days. \vspace{5mm}
         \item Idealised urban area of 1000 km$^2$. \vspace{5mm}
         \item Total NMVOC emissions of 1000 ton/day \newline [Warnecke et al., JGR, 2007]. \vspace{5mm}
         \item NMVOC emissions constant until noon of day 1.
@@ -71,4 +71,55 @@
     \frametitle{Model Scenarios}
     \vspace{-0.5cm}
     \input{tex_files/modelling}
+\end{frame}
+
+{
+    \usebackgroundtemplate{%
+        \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[height=0.95\paperheight, width = 0.98\paperwidth]{../Plotting_scripts/Speciations_all_mechanisms}\hfil}\vfil}
+    }
+    \begin{frame}[plain]
+    \end{frame}
+}
+
+{
+    \usebackgroundtemplate{%
+        \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[height=0.95\paperheight, width = 0.98\paperwidth]{../Plotting_scripts/O3_mixing_ratios_comparisons}\hfil}\vfil}
+    }
+    \begin{frame}[plain]
+    \end{frame}
+}
+
+{
+    \usebackgroundtemplate{%
+        \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[height=0.95\paperheight, width = 0.98\paperwidth]{../Plotting_scripts/O3_mixing_ratio_comparison_by_speciation}\hfil}\vfil}
+    }
+    \begin{frame}[plain]
+    \end{frame}
+}
+
+{
+    \usebackgroundtemplate{%
+        \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[height=0.95\paperheight, width = 0.98\paperwidth]{../Plotting_scripts/Ox_Allocated_tagged_solvents_only_EMEP}\hfil}\vfil}
+    }
+    \begin{frame}[plain]
+    \end{frame}
+}
+
+\begin{frame}
+    \frametitle{Further Analysis} 
+    \begin{columns}[onlytextwidth]
+        \begin{column}{0.5\textwidth}
+            \begin{flushleft}
+                \vspace{-13mm}
+                \includegraphics[scale=0.24]{../Pictures/regional_plot}
+            \end{flushleft}
+        \end{column}%
+        \begin{column}{0.5\textwidth}
+            \vspace{-6mm}
+            \begin{itemize}
+                \item Representation of VOC between mechanisms, \\ e.g. chlorinated VOC. \vspace{5mm}
+                \item Reasons for large differences in boxmodel results, given the regional modelling results.
+            \end{itemize}
+        \end{column}
+    \end{columns}
 \end{frame}
